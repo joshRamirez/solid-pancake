@@ -16,4 +16,16 @@ public class SumOfMultiples {
 
         return sum;
     }
+
+    public static Double getSumOfMultiplesTrick(Double input1, Double input2, Double limit) {
+        limit--;
+
+        return getSumForMultiple(input1, limit) + getSumForMultiple(input2, limit) - getSumForMultiple(input1 * input2, limit);
+    }
+
+    private static Double getSumForMultiple(Double multiple, Double limit) {
+        Double multipleLimit = Math.floor(limit / multiple);
+
+        return multiple * (multipleLimit + 1) * (multipleLimit / 2);
+    }
 }
