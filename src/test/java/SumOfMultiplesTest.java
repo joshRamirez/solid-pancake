@@ -41,7 +41,7 @@ public class SumOfMultiplesTest {
         Double limit = 1000000.0;
         Double expectedResult = 233333166668.0;
 
-        assertEquals("Sum for limit of 1000 was incorrect", expectedResult, SumOfMultiples.getSumOfMultiples(input1, input2, limit), .0001);
+        assertEquals("Sum for limit of 1000000 was incorrect", expectedResult, SumOfMultiples.getSumOfMultiples(input1, input2, limit), .0001);
     }
 
     @Test
@@ -51,6 +51,6 @@ public class SumOfMultiplesTest {
         Double limit = 1000000.0;
         Double expectedResult = 233333166668.0;
 
-        assertEquals("[trick] Sum for limit of 1000 was incorrect", expectedResult, SumOfMultiples.getSumOfMultiplesTrick(input1, input2, limit), .0001);
+        assertEquals("[trick] Sum for limit of 1000000 was incorrect", expectedResult, SumOfMultiples.getSumOfMultiplesTrick(input1, input2, limit), .0001);
     }
 }
